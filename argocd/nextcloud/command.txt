@@ -1,6 +1,0 @@
-argocd app create nextcloud-app \
-    --dest-namespace argocd \
-    --dest-server https://kubernetes.default.svc \
-    --repo https://github.com/tolejarczuk/kubernetes.git \
-    --path argocd/nextcloud  
-argocd app sync nextcloud-app 

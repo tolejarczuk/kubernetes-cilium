@@ -1,6 +1,0 @@
-argocd app create servarr \
-    --dest-namespace argocd \
-    --dest-server https://kubernetes.default.svc \
-    --repo https://github.com/tolejarczuk/kubernetes.git \
-    --path argocd/servarr  
-argocd app sync servarr  

@@ -1,6 +1,0 @@
-﻿spec:
-  destination:
-    server: https://kubernetes.default.svc
-  source:
-    repoURL: https://github.com/tolejarczuk/kubernetes.git
-    targetRevision: HEAD

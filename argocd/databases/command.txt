@@ -1,6 +1,0 @@
-argocd app create databases \
-    --dest-namespace argocd \
-    --dest-server https://kubernetes.default.svc \
-    --repo https://github.com/tolejarczuk/kubernetes.git \
-    --path argocd/databases  
-argocd app sync databases  

@@ -1,6 +1,0 @@
-argocd app create hishtory \
-    --dest-namespace argocd \
-    --dest-server https://kubernetes.default.svc \
-    --repo https://github.com/tolejarczuk/kubernetes.git \
-    --path argocd/hishtory  
-argocd app sync hishtory  
