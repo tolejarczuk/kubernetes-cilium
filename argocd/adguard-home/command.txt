@@ -1,0 +1,6 @@
+argocd app create adguard-home \
+    --dest-namespace argocd \
+    --dest-server https://kubernetes.default.svc \
+    --repo https://github.com/tolejarczuk/kubernetes.git \
+    --path argocd/adguard-home  
+argocd app sync adguard-home  

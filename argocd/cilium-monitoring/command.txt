@@ -1,0 +1,6 @@
+argocd app create cilium-monitoring \
+    --dest-namespace argocd \
+    --dest-server https://kubernetes.default.svc \
+    --repo https://github.com/tolejarczuk/kubernetes.git \
+    --path argocd/cilium-monitoring  
+argocd app sync cilium-monitoring  

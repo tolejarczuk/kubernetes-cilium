@@ -1,0 +1,6 @@
+argocd app create essentials \
+    --dest-namespace argocd \
+    --dest-server https://kubernetes.default.svc \
+    --repo https://github.com/tolejarczuk/kubernetes.git \
+    --path argocd/essentials  
+argocd app sync essentials  

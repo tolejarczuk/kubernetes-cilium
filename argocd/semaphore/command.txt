@@ -1,0 +1,6 @@
+argocd app create semaphore-app \
+    --dest-namespace argocd \
+    --dest-server https://kubernetes.default.svc \
+    --repo https://github.com/tolejarczuk/kubernetes.git \
+    --path argocd/semaphore  
+argocd app sync semaphore-app 

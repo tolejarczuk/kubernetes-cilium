@@ -1,0 +1,6 @@
+argocd app create paperless-ngx \
+    --dest-namespace argocd \
+    --dest-server https://kubernetes.default.svc \
+    --repo https://github.com/tolejarczuk/kubernetes.git \
+    --path argocd/paperless
+argocd app sync paperless-ngx
