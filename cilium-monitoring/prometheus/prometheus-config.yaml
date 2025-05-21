@@ -118,5 +118,10 @@ data:
         metrics_path: /metrics
         static_configs:
           - targets: ['hubble-metrics.kube-system.svc.cluster.local:9965']
+
+      - job_name: 'kube-state-metrics'
+        static_configs:
+          - targets: ['kube-state-metrics.kube-state-metrics.svc.cluster.local:8080']
+
 ---
 
